@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>NIC ICE CREAM</title>
+</head>
+<style>
+
+.last {
+    background-color: #ff944d;
+    text-align: center;
+    height: 60vh;
+}
+
+.last-para {
+    color: black;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0;
+    padding: 10px;
+}
+
+.last-para-1 {
+    color: black;
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 8%;
+}
+
+.submit-1 {
+    background-color: blue;
+    color: black;
+}
+
+.our-office {
+    font-family: "roboto";
+    font-size: 18px;
+    color: black;
+    font-weight: 800;
+    margin-top: 20px;
+}
+
+.sub-plot {
+    font-family: "roboto";
+    font-size: 18px;
+    color: black;
+    font-weight: 800;
+    margin-top: 20px;
+}
+
+.map-img {
+    width: 40vw;
+    height: 60vh;
+}
+
+.map {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #ffb84d;
+    padding: 20px;
+}
+
+.map-side-section {
+    margin-left: 10%;
+}
+
+.our-office {
+    color: black;
+    font-family: "roboto";
+    font-weight: 700;
+    font-size: 25px;
+
+}
+
+.sub-plot {
+    color: black;
+    font-family: "roboto";
+    font-weight: 300;
+    font-size: 18px;
+
+}
+
+    {
+    color: black;
+    font-family: "roboto";
+    font-weight: 700;
+    font-size: 25px;
+
+}
+
+.dotpe-1 {
+    width: 20vw;
+    height: 30vh;
+    margin: 10PX;
+    border-style: solid;
+    border-width: 3px;
+    border-color: white;
+}
+
+.white-box-head {
+    font-family: "roboto";
+    font-weight: bold;
+
+}
+
+.white-box-para {
+    font-family: "roboto";
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.white-box {
+    background-color: #ffffff;
+    text-align: center;
+    margin-bottom: 50px;
+    width: 60vw;
+    margin-left: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-style: solid;
+    border-width: 5px 12px 15px 3px;
+    border-color: ;
+}
+
+.Customer-Love {
+    background-color: #ff4d88;
+    text-align: center;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.dotpe {
+    width: 200px;
+    height: 120px;
+    margin: 40PX;
+}
+
+.order-now {
+    background-color: orange;
+}
+
+.nine-img {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.order-head {
+    text-align: center;
+    font-family: "Roboto";
+    font-size: 55px;
+    color: black;
+    font-weight: 900;
+    margin: 30px;
+}
+
+.images-Super-set {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.super-head {
+    font-size: 40px;
+    font-weight: bold;
+    font-family: "Roboto";
+    color: black;
+
+}
+
+.Sea-salted-carame {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Roboto";
+    color: orange;
+}
+
+.super-img {
+    width: 35vw;
+    height: 35vh;
+    margin: 30px;
+}
+
+.super-set {
+    text-align: center;
+    margin: 20px;
+}
+
+.respics-img {
+    width: 50vw;
+}
+
+.respics {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    width: 100vw;
+    background-size: cover;
+}
+
+.respics-head-para {
+    text-align: center;
+    background-color: #d6d6c2;
+    width: 50vw;
+}
+
+.respics-head {
+    color: black;
+    font-weight: bold;
+    font-family: "Roboto";
+    font-size: 25px;
+}
+
+.respics-para {
+    color: red;
+    font-weight: bold;
+    font-family: "Roboto";
+    font-size: 18px;
+}
+
+.slide-one {
+    width: 100%;
+    padding: 40PX;
+
+}
+
+.Mixed {
+    color: black;
+    font-weight: bold;
+    font-family: "Roboto";
+    font-size: 25px;
+}
+
+.Mixed1 {
+    color: red;
+    font-weight: bold;
+    font-family: "Roboto";
+    font-size: 18px;
+}
+
+
+
+.header {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    background-color: #33bbff;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.header-logo {
+    width: 85px;
+    height: 85px;
+    margin: 20PX;
+}
+
+.topnav {
+    justify-content: end;
+    margin-left: 18%;
+    margin-top: 20px;
+
+}
+
+.home {
+    color: #ffffff;
+    margin-left: 25px;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 0.8px;
+}
+
+.home:hover {
+    color: #b38600;
+
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+}
+
+.Rashmika {
+    width: 100vw;
+
+}
+
+.images-section {
+    width: 100vw;
+}
+
+.Our-Categories {
+    color: black;
+    font-size: 36px;
+    font-size: "Roboto";
+    font-style: italic;
+    text-align: center;
+}
+
+.images-section-two {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.mango {
+    width: 50vw;
+    height: 50%;
+    background-size: cover;
+}
+
+.image-text-section-one {
+    height: 50%;
+
+}
+
+.image-text-section {
+    display: flex;
+    flex-direction: row;
+    background-color: #1aff1a;
+    width: 50vw;
+    justify-content: center;
+}
+
+.No-added {
+    text-align: center;
+    padding: 30px;
+}
+
+.logo {
+    width: 60px;
+    height: 70px;
+}
+
+.mango-last {
+    width: 50vw;
+    height: 75vh;
+    background-size: cover;
+
+}
+
+.Fruit-N-Nut {
+    color: black;
+    font-family: "Roboto";
+    text-shadow: 3px;
+    font-size: 35px;
+    font-style: italic;
+    text-align: center;
+}
+
+.Fruit {
+    margin: 30px;
+}
+
+.International-set {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 30px;
+    margin-left: 20px;
+}
+
+.International-Classic {
+    margin: 50px;
+    text-align: center;
+}
+
+.International-para-img {
+    text-align: center;
+    margin: 30px;
+}
+
+
+.arabain {
+    width: 30vw;
+    height: 40vh;
+}
+
+.arabain1 {
+    width: 30vw;
+    height: 45vh;
+}
+
+.arabain2 {
+    width: 35vw;
+    height: 40vh;
+}
+
+.coffee {
+    color: #ff6600;
+    margin-top: -30px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.View-more {
+    padding: 10px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: black;
+    border-radius: 30px;
+    border: solid 2px;
+}
+
+.View-more:hover {
+    background-color: orange;
+    color: #ffffff;
+}
+
+.pic1 {
+    height: 200px;
+    width: 100vw;
+
+}
+
+
+
+
+    </style>
+<body>
+    <div class="header">
+        <div>
+            <img src="https://nicicecreams.com/wp-content/uploads/2023/01/NIC_logo_2_Dec_2022_logo-01.png" class="header-logo" />
+        </div>
+        <div class="topnav">
+            <a class="active home">Home</a>
+            <a class="home">Our Story</a>
+            <a class="home">FLAVOURS</a>
+            <a class="home">Locations</a>
+            <a class="home">Blog</a>
+            <a class="home">Media Love</a>
+            <a class="home">Contact US</a>
+        </div>
+    </div>
+    <img src="https://spiritz.in/wp-content/uploads/2023/06/Rashmika-Mandanna-associates-with-an-ice-cream-brand.jpg" class="Rashmika" />
+    <h1 class="Our-Categories">Our Categories</h1>
+    <div class="images-section">
+
+        <div class="images-section-two">
+            <img src="https://nicicecreams.com/wp-content/uploads/2023/01/Mango-2.png" class="mango" />
+            <img src="https://nicicecreams.com/wp-content/uploads/2023/01/Indian-Inspiration-1.png" class="mango" />
+        </div>
+
+        <div class="images-section-two">
+            <img src="https://nicicecreams.com/wp-content/uploads/2023/01/International-Classic.png" class="mango" />
+            <img src="https://nicicecreams.com/wp-content/uploads/2022/07/IMG-7.png" class="mango" />
+        </div>
+
+        <div class="images-section-two">
+            <img src="https://nicicecreams.com/wp-content/uploads/2023/01/Indian-Flavours.png" class="mango" />
+            <img src="https://nicicecreams.com/wp-content/uploads/2023/01/Indian-Inspiration-1.png" class="mango" />
+        </div>
+
+        <div class="images-section-two">
+            <img src="https://nicicecreams.com/wp-content/uploads/2023/01/International-Premium.png" class="mango" />
+            <img src="https://nicicecreams.com/wp-content/uploads/2023/01/IP-French-Vanilla.png" class="mango" />
+        </div>
+
+        <div class="images-section-two">
+            <img src="https://nicicecreams.com/wp-content/uploads/2023/01/SP-SS-Caramel.png" class="mango" />
+            <img src="https://nicicecreams.com/wp-content/uploads/2023/01/Super-Premium.png" class="mango" />
+        </div>
+
+        <div class="images-section-two">
+            <img src="https://nicicecreams.com/wp-content/uploads/2023/01/Sugarless-Coconut-1.png" class="mango" />
+            <img src="https://nicicecreams.com/wp-content/uploads/2022/07/IMG-10.png" class="mango" />
+        </div>
+
+        <div class="images-section-two">
+            <img src="https://townsquare.media/site/152/files/2019/07/kids-eating-ice-cream.jpg?w=1200&h=0&zc=1&s=0&a=t&q=89" class="mango-last" />
+
+            <div class="image-text-section-one">
+                <div class="image-text-section">
+
+                    <div class="No-added">
+                        <img src="https://www.svgrepo.com/show/404148/soft-ice-cream.svg" class="logo" />
+                        <h1 class="added-head">No added</h1>
+                        <p class="manufacture">We manufacture, distribute <br> and sell our ice cream across <br>the nation within 45 days</p>
+                    </div>
+                    <div class="No-added">
+                        <img src="https://www.svgrepo.com/show/500593/ice-cream.svg" class="logo" />
+                        <h1 class="added-head">Made with milk</h1>
+                        <p class="manufacture">We only use the available <br>milk that is organic</p>
+                    </div>
+                </div>
+
+                <div class="image-text-section">
+                    <div class="No-added">
+                        <img src="https://www.svgrepo.com/show/456100/ice-cream-stick.svg" class="logo" />
+                        <h1 class="added-head">Finest ingredients</h1>
+                        <p class="manufacture">All fruits are hand-picked, <br>only used whole <br>only used whole</p>
+                    </div>
+                    <div class="No-added">
+                        <img src="https://www.svgrepo.com/show/403678/ice-cream.svg" class="logo" />
+                        <h1 class="added-head">Variety of Flavours</h1>
+                        <p class="manufacture">We are constantly <br> experimenting with over <br>50+ flavours </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="Fruit">
+        <h1 class="Fruit-N-Nut">Fruit N Nut</h1>
+    </div>
+    <div class="respics">
+        <img src="https://media.gettyimages.com/id/955622618/photo/britain-weather-offbeat.jpg?b=1&s=594x594&w=0&k=20&c=plPYuWybpsIckPHlv1cgUin2clNSVwc1mfMlWbFGcwA=" class="respics-img" />
+        <div class="respics-head-para">
+            <h1 class="respics-head">Homemade Ice Cream Recipes to Make Right Now</h1>
+            <p class="respics-para">With these homemade ice cream recipes,<br> you can churn up a new flavor every week,<br> all summer long, any time the craving strikes.<br> Some don't even require an ice cream maker—just a little heavy cream and a dream.<br> And maybe some sprinkles.
+                BY<br> LISA ELBERT AND THE EDITORS OF EPICURIOUS</p>
+            <button class="View-more">Ice Cream Recipes</button>
+        </div>
+
+    </div>
+
+
+
+
+
+    <div class="International-Classic">
+        <h1 class="Fruit-N-Nut"> International Classic</h1>
+        <div class="International-set">
+            <div class="International-para-img">
+                <img src="https://th.bing.com/th/id/OIP.PFK15-wYe-lYQw1nwvmVdAHaHa?w=173&h=180&c=7&r=0&o=5&dpr=1.1&pid=1.7" class="arabain" />
+                <p class="coffee">alphonso mango</p>
+            </div>
+            <div class="International-para-img">
+                <img src="https://th.bing.com/th/id/OIP.60-f5jGrmUq21CJZ2TCc8gHaHa?w=220&h=220&c=7&r=0&o=5&dpr=1.1&pid=1.7" class="arabain" />
+                <p class="coffee">Tender coconut</p>
+            </div>
+            <div class="International-para-img">
+                <img src="https://th.bing.com/th/id/OIP.rZVbhZJ4Kf0Dvn_wWj7SDwHaHa?w=202&h=202&c=7&r=0&o=5&dpr=1.1&pid=1.7" class="arabain" />
+                <p class="coffee">coffee apricot</p>
+            </div>
+        </div>
+        <button class="View-more">VIEW MORE</button>
+    </div>
+
+
+
+    <div class="container">
+        <h1 class="Fruit-N-Nut">Indian Inspiration</h1>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+
+                <div class="item active">
+                    <img src="https://nicicecreams.com/wp-content/uploads/2023/02/Thandai-1536x726.png" class="slide-one">
+                    <div class="carousel-caption">
+                        <h3 class="Mixed">NIC THANDAI</h3>
+                        <p class="Mixed1">WE love the nicicecreams </p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="https://nicicecreams.com/wp-content/uploads/2023/01/Paan-1536x783.png" class="slide-one">
+                    <div class="carousel-caption">
+                        <h3 class="Mixed">NIC PAAN</h3>
+                        <p class="Mixed1">WE LOVE THE nicicecreams!</p>
+                    </div>
+                </div>
+
+
+                <div class="item">
+                    <img src="https://nicicecreams.com/wp-content/uploads/2023/01/Mixed-berries-1536x783.png" class="slide-one">
+                    <div class="carousel-caption">
+                        <h3 class="Mixed">Mixed CREAM</h3>
+                        <p class="Mixed1">We love the ICE CREAM</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="images-Super-set">
+        <div class="super-set">
+            <h1 class="super-head">Super Premium</h1>
+            <img src="https://nicicecreams.com/wp-content/uploads/2023/01/Sea-salted-caramel-1536x783.png" class="super-img" />
+            <p class="Sea-salted-carame">Sea salted carame</p>
+            <button class="View-more">VIEW MORE</button>
+        </div>
+        <div class="super-set">
+            <h1 class="super-head">Sugarless</h1>
+            <img src="https://nicicecreams.com/wp-content/uploads/2023/02/Tender-Coconut-1536x726.png" class="super-img" />
+            <p class="Sea-salted-carame">TenderCoconut</p>
+            <button class="View-more">VIEW MORE</button>
+        </div>
+    </div>
+    <div class="order-now">
+        <h1 class="order-head"> ORDER NOW</h1>
+        <div class="nine-img">
+            <img src="https://nicicecreams.com/wp-content/uploads/2022/07/DotPeGrey.png" class="dotpe" />
+            <img src="https://nicicecreams.com/wp-content/uploads/2022/07/SwiggyGrey.png" class="dotpe" />
+            <img src="https://nicicecreams.com/wp-content/uploads/2022/07/ZomatoGrey.png" class="dotpe" />
+            <img src="https://nicicecreams.com/wp-content/uploads/2022/07/BlinkItGrey.png" class="dotpe" />
+            <img src="https://nicicecreams.com/wp-content/uploads/2022/07/SwiggyInstamart.png" class="dotpe" />
+            <img src="https://nicicecreams.com/wp-content/uploads/2022/07/AmazonIndiaGrey.png" class="dotpe" />
+            <img src="https://nicicecreams.com/wp-content/uploads/2022/07/BigBasketGrey.png" class="dotpe" />
+            <img src="https://nicicecreams.com/wp-content/uploads/2022/07/Zepto.png" class="dotpe" />
+            <img src="https://nicicecreams.com/wp-content/uploads/2022/07/FrogoGrey.png" class="dotpe" />
+
+
+        </div>
+    </div>
+    <div class="Customer-Love">
+        <h1 class="order-head"> Customer Love</h1>
+        <div class="white-box">
+            <h1 class="white-box-head">MARKETING SEGMENTATION</h>
+                <p class="white-box-para">The Target Market for Ice Cream: Who Buys It and Why</p>
+                <p class="white-small-para">mumbai</p>
+        </div>
+
+    </div>
+    <div class="order-now">
+        <h1 class="order-head"> ORDER NOW</h1>
+        <div class="nine-img">
+            <img src="https://nicicecreams.com/wp-content/uploads/cache/2022/06/GAP08553-scaled/761048707.jpg" class="dotpe-1" />
+            <img src="https://nicicecreams.com/wp-content/uploads/cache/2022/06/GAP09586_4by5-scaled/1454117467.jpg" class="dotpe-1" />
+            <img src="https://nicicecreams.com/wp-content/uploads/cache/2022/06/GAP06074-scaled/317828083.jpg" class="dotpe-1" />
+            <img src="https://nicicecreams.com/wp-content/uploads/cache/2023/01/Frame-3/596575921.png" class="dotpe-1" />
+            <img src="https://nicicecreams.com/wp-content/uploads/cache/2023/01/IP-French-Vanilla/326054178.png" class="dotpe-1" />
+            <img src="https://nicicecreams.com/wp-content/uploads/cache/2023/01/Indian-Flavours/3425652013.png" class="dotpe-1" />
+            <img src="https://nicicecreams.com/wp-content/uploads/cache/2023/01/SP-SS-Caramel/340626540.png" class="dotpe-1" />
+
+
+        </div>
+    </div>
+    <div class="map">
+        <img src="https://th.bing.com/th/id/OIP.NnS0mAE5dDHhwl4PapxX9wHaGk?rs=1&pid=ImgDetMain" class="map-img" />
+        <div class="map-side-section">
+            <h1 class="our-office"> Our Office</h1>
+            <p class="sub-plot">Sub Plot No11, Final Plot no 106,<br>Hadapsar Industrial
+                township, Ramtekdi,<br>Mouje, Hadapsar, Pune 411013</p>
+            <h1 class="our-office"> Contact Us</h1>
+            <p class="sub-plot"> 9156279955<br> enquiry@nicicecreams.com</p>
+            <h1 class="our-office"> Get in touch</h1>
+
+
+            <form action="/action_page.php">
+                <label for="name">Message:</label><br>
+                <input type="text" id="fname" name="fname"><br>
+
+                <label for="name">Name:</label><br>
+                <input type="text" id="fname" name="fname"><br>
+
+                <label for="name">EMail:</label><br>
+                <input type="text" id="lname" name="lname"><br><br>
+                <input type="submit" value="Submit" class="submit-1">
+            </form>
+        </div>
+    </div>
+    <div class="last">
+        <p class="last-para">Sub Plot No11, Final Plot no 106,<br>
+            Hadapsar Industrial township, Ramtekdi,<br>
+            Mouje, Hadapsar, Pune 411013</p>
+        <p class="last-para-1">9156279955<br>
+            enquiry@nicicecreams.com<br>Designed with ❤️ by Social Pill </p>
+    </div>
+</body>
+</html>
